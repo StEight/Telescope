@@ -70,7 +70,7 @@ Meteor.methods({
             actionLink : user ? Telescope.utils.getSigninUrl() : Telescope.utils.getSignupUrl(),
             invitedBy : Users.getDisplayName(currentUser),
             profileUrl : Users.getProfileUrl(currentUser),
-            siteUrl: Settings.get("siteUrl")
+            siteUrl: Settings.get("siteUrl").replace(/\/$/, '')
           };
 
       Meteor.setTimeout(function () {
