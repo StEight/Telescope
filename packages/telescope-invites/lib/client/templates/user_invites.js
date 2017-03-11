@@ -15,7 +15,8 @@ Template.user_invites.created = function () {
 Template.user_invites.helpers({
   canCurrentUserInvite: function () {
     var currentUser = Meteor.user();
-    return currentUser && (Users.is.admin(currentUser) || currentUser.telescope.inviteCount > 0 && Users.can.invite(currentUser));
+    //return currentUser && (Users.is.admin(currentUser) || currentUser.telescope.inviteCount > 0 && Users.can.invite(currentUser));
+    return true;
   },
   invitesLeft: function () {
     var currentUser = Meteor.user();
