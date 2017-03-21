@@ -40,7 +40,7 @@ Users.pubsub.hiddenProperties = {
  */
 Users.pubsub.avatarProperties = {
   _id: true,
-  'telescope.emailHash': true,
+  'telescope.emailHash': false,
   'telescope.slug': true,
   'telescope.displayName': true,
   username: true,

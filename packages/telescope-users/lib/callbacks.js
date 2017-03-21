@@ -110,7 +110,9 @@ function setupUser (user, options) {
 
   // generate email hash
   if (!!user.telescope.email) {
-    user.telescope.emailHash = Gravatar.hash(user.telescope.email);
+    //user.telescope.emailHash = Gravatar.hash(user.telescope.email);
+    user.telescope.emailHash = '00000000000000000000000000000000';
+
   }
 
   // look in a few places for the displayName
