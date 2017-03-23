@@ -21,7 +21,7 @@ Telescope.utils.icons = {
   next: "angle-right",
   close: "times",
   //upvote: "chevron-up",
-  upvote: "thumbs-up",
+  upvote: "thumbs-o-up",
   voted: "check",
   downvote: "chevron-down",
   facebook: "facebook-square",

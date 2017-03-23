@@ -320,13 +320,15 @@
 	}
 	.voted{
 		.vote-action{
-			color: $lighter-text;
+			//color: $lighter-text;
+			background-color: #f08080;
+			border-radius: 12px;
 		}
 	}
 	.upvoted{
 		.upvote-link{
 			//color: $red;
-			color: #ff1493;
+			color: white;
 		}
 	}
 	.downvoted{
