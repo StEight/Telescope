@@ -320,15 +320,13 @@
 	}
 	.voted{
 		.vote-action{
-			//color: $lighter-text;
-			background-color: #f08080;
-			border-radius: 12px;
+			color: $lighter-text;
 		}
 	}
 	.upvoted{
 		.upvote-link{
-			//color: $red;
-			color: white;
+			color: #b22222;
+			//color: white;
 		}
 	}
 	.downvoted{
@@ -340,6 +338,12 @@
 		border: 1px solid $lighter-text;
 		border-radius: 100px;
 	}
+
+	.vote-actions.upvoted {
+		border: 1px solid #b22222;
+		border-radius: 100px;
+	}
+
 	.downvote-link{
 		border-top: 1px solid $lighter-text;
 	}
