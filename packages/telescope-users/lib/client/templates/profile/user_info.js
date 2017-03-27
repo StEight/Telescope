@@ -19,6 +19,9 @@ Template.user_info.helpers({
   getGitHubName: function () {
     return Users.getGitHubName(this);
   },
+  getKarma: function() {
+    return Math.round(100*this.telescope.karma)/100;
+  },
   publicProfileFields: function () {
     var user = this;
     var schema = Users.simpleSchema();

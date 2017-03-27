@@ -4,7 +4,11 @@ Template.user_account.helpers({
   },
   userFields: function () {
     var fields = Meteor.users.simpleSchema().getEditableFields(Meteor.user());
-    return fields;
+
+    var fieldsArray = ["telescope.displayName", "telescope.email", "telescope.settings", "telescope.newsletter.showBanner",
+      "telescope.newsletter.subscribeToNewsletter", "telescope.notifications.posts", "telescope.notifications.comments",
+      "telescope.notifications.replies"];
+    return fieldsArray;
   },
   isUsingPassword: function  () {
     return this.services && !!this.services.password;

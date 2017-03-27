@@ -8,6 +8,26 @@
           <td>{{_id}}</td>
         </tr>
       {{/if}}
+      <tr>
+        <td><b>User Name:</b></td>
+        <td>
+          {{username}}
+        </td>
+      </tr>
+      <tr>
+        <td><b>Display Name:</b></td>
+        <td>
+          {{telescope.displayName}}
+        </td>
+      </tr>
+      <tr>
+        <td><b>Karma</b></td>
+        <!--<td>{{telescope.karma}}</td>-->
+        <td>{{getKarma}}</td>
+      </tr>
+
+      <!--
+
       {{#each publicProfileFields}}
         <tr>
           <td>{{label}}</td>
@@ -20,6 +40,7 @@
           </td>
         </tr>
       {{/each}}
+      -->
     </table>
     {{#if canEditProfile}}
       <a class="edit-profile-button button btn btn-primary inline" href="{{pathFor 'userEdit' _idOrSlug=this.telescope.slug}}">{{_ "edit_profile"}}</a>
