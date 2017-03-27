@@ -1,6 +1,6 @@
 <template name="user_account">
   <div class="grid-small grid-module dialog user-edit">
-  <span style="font-weight: bold;">User Name: </span> {{username}} <br><br>
+  <span style="font-weight: bold; font-size: 1.8em;">{{username}}</span>  <br><br>
 
   {{> quickForm collection="Meteor.users" doc=user id="editUserForm" template="bootstrap3-horizontal" input-col-class="controls" type="update" fields=userFields}}
 
