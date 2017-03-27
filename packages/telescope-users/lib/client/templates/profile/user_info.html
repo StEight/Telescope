@@ -29,7 +29,8 @@
         <a class="button btn btn-primary inline invite-link" href="#">{{_ "invite"}}</a>
       {{else}}
         {{#if inviteCount}}
-          <a class="button btn btn-primary inline invite-link" href="#">{{_ "invite"}} ({{inviteCount}} {{_ "left"}})</a>
+          <!-- <a class="button btn btn-primary inline invite-link" href="#">{{_ "invite"}} ({{inviteCount}} {{_ "left"}})</a> -->
+          <a class="button btn btn-primary inline invite-link" href="#">{{_ "invite"}}</a>
         {{else}}
           <a class="button btn inline disabled" href="#">{{_ "invite_none_left"}}</a>
         {{/if}}
