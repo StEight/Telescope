@@ -1,6 +1,6 @@
 Template.user_invites.created = function () {
-
-  var user = this.data;
+  //var user = this.data;
+  var user = this.data.user;
   var instance = this;
 
   instance.invites = new ReactiveVar({});

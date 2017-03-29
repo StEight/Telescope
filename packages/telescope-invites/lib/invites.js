@@ -92,10 +92,12 @@ Invites.deny({
   remove: function(){ return true; }
 });
 
+/*
 Telescope.modules.add("profileEdit", {
   template: 'user_invites',
   order: 2
 });
+*/
 
  function setStartingInvites (user) {
   // give new users a few invites (default to 3)

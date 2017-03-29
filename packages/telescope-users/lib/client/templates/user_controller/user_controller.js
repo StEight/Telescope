@@ -5,12 +5,10 @@ Template.user_controller.onCreated(function () {
 
 Template.user_controller.helpers({
   data: function () {
-
     var idOrSlug = FlowRouter.getParam("_idOrSlug");
     var findById = Meteor.users.findOne(idOrSlug);
     var findBySlug = Meteor.users.findOne({"telescope.slug": idOrSlug});
     var user = findById || findBySlug;
     return {user: user};
-
   }
 });

@@ -26,6 +26,13 @@ FlowRouter.route('/account', {
   }]
 });
 
+FlowRouter.route('/users/:_idOrSlug/invite', {
+  name: "userInvite",
+  action: function(params, queryParams) {
+    BlazeLayout.render("layout", {main: "user_controller", userTemplate: "user_invites"});
+  }
+});
+
 FlowRouter.route('/sign-out', {
   name: "signOut",
   triggersEnter: [function(context, redirect) {

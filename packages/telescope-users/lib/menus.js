@@ -36,6 +36,13 @@ var userMenuItems = [
     adminOnly: true
   },
   {
+    route: function () {
+      var user = Meteor.user();
+      return FlowRouter.path('userInvite', {_idOrSlug: user && user.telescope && user.telescope.slug});
+    },    
+    label: 'invite'
+  },
+  {
     route: 'signOut',
     label: 'sign_out'
     // description: 'sign_out'
